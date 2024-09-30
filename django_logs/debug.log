@@ -1,0 +1,4 @@
+2024-09-30 11:42:58,014 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-09-30 11:43:00,168 app.views    INFO     logged
+2024-09-30 11:43:01,529 app.views    INFO     logged
+2024-09-30 11:43:04,312 app.views    INFO     logged

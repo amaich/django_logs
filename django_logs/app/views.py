@@ -1,3 +1,11 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+import logging
 
-# Create your views here.
+
+logger = logging.getLogger(__name__)
+
+
+def main(request):
+    logger.info('logged')
+    return HttpResponse('<h1>LOGGED</h1>')
