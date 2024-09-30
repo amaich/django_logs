@@ -38,7 +38,7 @@ services:
     container_name: promtail
     volumes:
       - ./promtail:/mnt/config
-      - ./var/log:/var/log
+      - /logs:/var/log
     command:
       - --config.file=/mnt/config/promtail-config.yaml
     networks:

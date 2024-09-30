@@ -1,0 +1,12 @@
+2024-09-30 09:17:05,601 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-09-30 09:17:15,517 app.views    INFO     logged
+2024-09-30 09:17:15,674 django.request WARNING  Not Found: /favicon.ico
+2024-09-30 09:20:18,066 app.views    INFO     logged
+2024-09-30 09:20:18,827 app.views    INFO     logged
+2024-09-30 09:20:19,522 app.views    INFO     logged
+2024-09-30 09:20:20,126 app.views    INFO     logged
+2024-09-30 09:22:53,843 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2024-09-30 09:22:59,350 app.views    INFO     logged
+2024-09-30 09:23:00,167 app.views    INFO     logged
+2024-09-30 09:23:03,339 app.views    INFO     logged
+2024-09-30 09:23:22,971 app.views    INFO     logged
