@@ -10,9 +10,40 @@ services:
     ports:
       - "9090:9090"
     restart: always
+    networks:
+      - log_network
 
   grafana:
     image: grafana/grafana
     container_name: grafana
     ports:
       - "3000:3000"
+    networks:
+      - log_network
+
+  loki:
+    image: grafana/loki
+    container_name: loki
+    volumes:
+      - ./loki:/mnt/config
+    ports:
+      - "3100:3100"
+    command:
+      - --config.file=/mnt/config/loki-config.yaml
+    networks:
+      - log_network
+
+  promtail:
+    image: grafana/promtail
+    container_name: promtail
+    volumes:
+      - ./promtail:/mnt/config
+      - ./var/log:/var/log
+    command:
+      - --config.file=/mnt/config/promtail-config.yaml
+    networks:
+      - log_network
+
+
+networks:
+  log_network:
